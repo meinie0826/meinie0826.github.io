@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>YOUR NAME Portfolio</title>
+</head>
+
+<body>
+  <div class=”container” >
+   
+    <div  heigth="40000">
+      <img src="photos/mzy.jpg" alt="Xuan Zhou in person" width="400" style="float:right">
+      <h2>梅子圆</h2>
+      <p> 我目前就读于安徽理工大学，是人工智能学院人工智能专业2020级的本科生。</p>
+      <p> <b>E-mail:</b>meiziyuan2002@gmail.com</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <hr>
+  </div>
+
+  <div class=”container”>
+    <h2>学业成绩</h2>
+    <p>我的加权平均成绩为92.3/100，GPA为4.23/5.00，专业排名为<b>1/82(前1%)</b>。
+      曾获得<b>国家奖学金</b>、安徽理工大学<b>一等奖学金</b>、安徽理工大学<b>三好学生标兵</b>、安徽理工大学<b>优秀共青团员</b>等多项荣誉。
+      我的英语六级为485分</p>
+  </div>
+
+  <hr>
+  <div class=”container”>
+    <h2>专业能力</h2>
+    <p>我熟悉C/C++、Golang、Python、Java等多种编程语言；我对《数据结构和算法》掌握的比较好，且参加过多项算法竞赛；我对《操作系统》掌握的比较好，
+      熟悉Linux编程，具有较好的底层开发能力；我熟悉分布式系统和数据库系统，对Raft一致性协议理解较深；我还熟悉存储系统，深入了解RAID和Cache等相关内容。</p>
+  </div>
+  <hr>
+  <div class=”container”>
+    <h2>专业能力</h2>
+    <ul>
+      <li>2023RoboCom机器人开发者大赛编程设计赛道国家二等奖（个人赛）</li>
+      <li>第十四届蓝桥杯软件与信息技术大赛国家三等奖（个人赛）</li>
+      <li>第二十届全国大学生机器人大赛Robomaster国家三等奖（排名第二）</li>
+      <li>安徽省程序设计大赛三等奖（排名第一）</li>
+      <li>全国大学生数学建模大赛安徽赛区三等奖（排名第一）</li>
+    </ul>
+  </div>
+  <hr>
+
+  <div class=”container”>
+    <h2>项目经历</h2>
+    <p>
+      <b>MIT 6.824-lab1-MapReduce</b>
+    </p>
+    <p>
+      我通过复现经典论文MapReduce: Simplified Data Processing on Large Clusters，构建了一个简易的分布式计算框架。通过go
+      build将写好的Map和Reduce函数编译成.so的插件，将插件动态加载进Worker线程。在整个系统中，由一个Master线程管理多个Worker线程来模拟多台机器分布式运行的状态，
+      进程间通过RPC通信来模拟机器间的通信。Master节点负责任务的拆分、分配、整合等,多个Worker节点负责处理Map和Reduce等任务。
+    </p>
+    <p>
+      <b> MIT 6.824-lab2~4-分布式kv数据库</b>
+    </p>
+    <p>
+      我通过复现经典论文In Search of an Understandable Consensus Algorithm论文中的Raft一致性协议，构建了一个具有心跳、选举、快照、持久化、分片集群等机制的Raft
+      Group，组成高可用数据节点。我使用一个节点作为注册中心，多个节点提供kv读写服务搭建服务集群，实现简易的服务
+      发现与负载均衡。它支持服务实例动态增减和分片数据转移，且能保证多客户端并发时的操作的线性一致性。
+    </p>
+    <p>
+      <b> 基于Cuckoo hashing和采样LRU的Cache</b>
+    </p>
+    <p>
+      我通过参考Redis的采样LRU设计，使用C++实现了一个基于Cuckoo
+      hashing和采样LRU的Cache系统。在cuckoohash_map库中增加了一个api接口，用于随机采样一定量的HashTable中的数据项来进行淘汰。Cache中实现了采样池来执行淘汰策略，其本质是通过单调队列的思想来优化
+      Cache淘汰的效率。Cache中对每个数据项维护了一个微秒级的时间戳，以此获得数据项的活跃情况，进而执行淘汰策略。
+    </p>
+
+  </div>
+  <hr>
+  <div class=”container”>
+    <h2>实习经历</h2>
+    <p>
+      <b>北京字节跳动科技有限公司-后端开发实习生-CQC管理驾驶舱</b>
+    </p>
+    <p>
+      主要负责维护CQC管理驾驶舱，清洗并处理数据，优化数据库查询接口。在Mapper层筛除掉无意义、不可用的数据，清洗掉低质量的数据，
+      对部分数据做了填充处理。优化了许多后端接口，通过改进SQL查询方式，提升了接口的效率，同时减轻数据库IO压力。
+    </p>
+
+
+  </div>
+
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
